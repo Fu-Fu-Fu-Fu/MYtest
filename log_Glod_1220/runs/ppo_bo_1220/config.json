@@ -1,0 +1,13 @@
+{
+  "variants_path": "./data/log_goldstein_price_family_variants.npz",
+  "model_path": "./model/finetuned_tabpfn_log_goldstein_price_family.ckpt",
+  "total_episodes": 5000,
+  "max_steps": 20,
+  "n_candidates": 128,
+  "hidden_dim": 64,
+  "n_self_attn_layers": 3,
+  "n_cross_attn_layers": 2,
+  "n_heads": 8,
+  "seed": 42,
+  "version": "log_goldstein_price"
+}

@@ -1,0 +1,624 @@
+任务开始运行于 r4519u01n01.misha.ycrc.yale.edu at Thu Dec 11 07:12:45 EST 2025
+CUDA_VISIBLE_DEVICES: 0
+正在使用的显卡信息：
+NVIDIA A100 80GB PCIe
++ python -u train_rl.py
+/gpfs/radev/pi/cohan/yz979/environment/miniconda3/envs/fl_test/lib/python3.11/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+Using device: cuda
+
+=== 初始参数统计 ===
+actor_mean.weight: mean=-0.0004, std=0.0443
+actor_mean.bias: tensor([0., 0.], device='cuda:0')
+actor_logstd: tensor([[0., 0.]], device='cuda:0')
+==================================================
+WARNING:root:The model was in 'batched' mode, likely after finetuning. Automatically switching to 'fit_preprocessors' mode for standard prediction. The model will be re-initialized.
+
+Update 1:
+  actor_mean.weight: mean=-0.0006, std=0.0441, min=-0.1199, max=0.1221
+  actor_mean.bias: [ 0.00252584 -0.0009837 ]
+  actor_logstd: [[0.00259088 0.00284858]], std=[[1.0025942 1.0028527]]
+  Avg Regret: 3.8717, Avg Reward: -14.69
+  Loss: 1.0565, Entropy: 2.8433
+WARNING:root:The model was in 'batched' mode, likely after finetuning. Automatically switching to 'fit_preprocessors' mode for standard prediction. The model will be re-initialized.
+[Visual] 可视化已保存: visualizations/TabPFN_CNN_PPO_Ackley_1765455168/vis_update_0001.png
+
+Update 2:
+  actor_mean.weight: mean=-0.0006, std=0.0442, min=-0.1191, max=0.1218
+  actor_mean.bias: [ 0.0049385  -0.00094962]
+  actor_logstd: [[0.00566378 0.00120412]], std=[[1.0056798 1.0012048]]
+  Avg Regret: 4.5541, Avg Reward: -15.15
+  Loss: 2.4214, Entropy: 2.8447
+
+Update 3:
+  actor_mean.weight: mean=-0.0006, std=0.0442, min=-0.1191, max=0.1222
+  actor_mean.bias: [ 0.00352192 -0.00086448]
+  actor_logstd: [[0.0063531  0.00274505]], std=[[1.0063734 1.0027488]]
+  Avg Regret: 3.7597, Avg Reward: -13.67
+  Loss: 0.9099, Entropy: 2.8470
+
+Update 4:
+  actor_mean.weight: mean=-0.0006, std=0.0442, min=-0.1195, max=0.1220
+  actor_mean.bias: [ 0.00284682 -0.0009423 ]
+  actor_logstd: [[0.00593425 0.00210675]], std=[[1.0059519 1.002109 ]]
+  Avg Regret: 4.3165, Avg Reward: -15.29
+  Loss: 0.5569, Entropy: 2.8459
+
+Update 5:
+  actor_mean.weight: mean=-0.0005, std=0.0442, min=-0.1192, max=0.1221
+  actor_mean.bias: [ 0.00294075 -0.00104602]
+  actor_logstd: [[0.00547336 0.00167808]], std=[[1.0054884 1.0016795]]
+  Avg Regret: 4.7721, Avg Reward: -16.30
+  Loss: 0.4510, Entropy: 2.8450
+  Saved to runs/TabPFN_CNN_PPO_Ackley_1765455168/agent_5.pt
+
+Update 6:
+  actor_mean.weight: mean=-0.0005, std=0.0442, min=-0.1187, max=0.1219
+  actor_mean.bias: [ 0.00298623 -0.00093377]
+  actor_logstd: [[0.00595216 0.00229213]], std=[[1.00597   1.0022948]]
+  Avg Regret: 4.5887, Avg Reward: -15.12
+  Loss: 0.5731, Entropy: 2.8461
+
+Update 7:
+  actor_mean.weight: mean=-0.0005, std=0.0441, min=-0.1185, max=0.1212
+  actor_mean.bias: [ 0.00315925 -0.00110113]
+  actor_logstd: [[0.00573888 0.00221457]], std=[[1.0057554 1.002217 ]]
+  Avg Regret: 3.9791, Avg Reward: -14.51
+  Loss: 0.3899, Entropy: 2.8458
+
+Update 8:
+  actor_mean.weight: mean=-0.0006, std=0.0441, min=-0.1185, max=0.1206
+  actor_mean.bias: [ 0.00318416 -0.00143705]
+  actor_logstd: [[0.00474256 0.00218195]], std=[[1.0047538 1.0021844]]
+  Avg Regret: 4.6488, Avg Reward: -15.43
+  Loss: 0.4941, Entropy: 2.8449
+
+Update 9:
+  actor_mean.weight: mean=-0.0006, std=0.0440, min=-0.1174, max=0.1203
+  actor_mean.bias: [ 0.00291323 -0.00139101]
+  actor_logstd: [[0.00432326 0.00132746]], std=[[1.0043327 1.0013283]]
+  Avg Regret: 4.5135, Avg Reward: -14.76
+  Loss: 0.6232, Entropy: 2.8436
+
+Update 10:
+  actor_mean.weight: mean=-0.0004, std=0.0439, min=-0.1160, max=0.1205
+  actor_mean.bias: [ 0.00326376 -0.00122479]
+  actor_logstd: [[0.00216188 0.00053122]], std=[[1.0021642 1.0005313]]
+  Avg Regret: 3.9663, Avg Reward: -14.18
+  Loss: 0.2646, Entropy: 2.8406
+  Saved to runs/TabPFN_CNN_PPO_Ackley_1765455168/agent_10.pt
+[Visual] 可视化已保存: visualizations/TabPFN_CNN_PPO_Ackley_1765455168/vis_update_0010.png
+
+Update 11:
+  actor_mean.weight: mean=-0.0004, std=0.0439, min=-0.1153, max=0.1205
+  actor_mean.bias: [ 0.00346564 -0.00121078]
+  actor_logstd: [[0.001856   0.00113995]], std=[[1.0018578 1.0011406]]
+  Avg Regret: 4.6697, Avg Reward: -15.17
+  Loss: 0.6637, Entropy: 2.8409
+
+Update 12:
+  actor_mean.weight: mean=-0.0004, std=0.0439, min=-0.1140, max=0.1202
+  actor_mean.bias: [ 0.00381246 -0.00150047]
+  actor_logstd: [[0.00170261 0.00092015]], std=[[1.0017041 1.0009205]]
+  Avg Regret: 5.3070, Avg Reward: -15.69
+  Loss: 0.1895, Entropy: 2.8405
+WARNING:posthog:analytics-python queue is full
+WARNING:posthog:analytics-python queue is full
+INFO:backoff:Backing off send_request(...) for 0.7s (posthog.request.APIError: [PostHog] <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+</body>
+</html>
+ (502))
+WARNING:posthog:analytics-python queue is full
+WARNING:posthog:analytics-python queue is full
+WARNING:posthog:analytics-python queue is full
+WARNING:posthog:analytics-python queue is full
+WARNING:posthog:analytics-python queue is full
+WARNING:posthog:analytics-python queue is full
+WARNING:posthog:analytics-python queue is full
+WARNING:posthog:analytics-python queue is full
+WARNING:posthog:analytics-python queue is full
+WARNING:posthog:analytics-python queue is full
+WARNING:posthog:analytics-python queue is full
+WARNING:posthog:analytics-python queue is full
+
+Update 13:
+  actor_mean.weight: mean=-0.0005, std=0.0438, min=-0.1135, max=0.1199
+  actor_mean.bias: [ 0.00365209 -0.00225387]
+  actor_logstd: [[ 3.1516480e-05 -2.3259803e-04]], std=[[1.0000316 0.9997675]]
+  Avg Regret: 5.0300, Avg Reward: -15.49
+  Loss: 0.5733, Entropy: 2.8377
+
+Update 14:
+  actor_mean.weight: mean=-0.0004, std=0.0438, min=-0.1125, max=0.1201
+  actor_mean.bias: [ 0.00351768 -0.00217615]
+  actor_logstd: [[-0.00035092 -0.00031785]], std=[[0.99964917 0.9996822 ]]
+  Avg Regret: 4.5015, Avg Reward: -14.06
+  Loss: 0.2547, Entropy: 2.8372
+
+Update 15:
+  actor_mean.weight: mean=-0.0004, std=0.0438, min=-0.1128, max=0.1201
+  actor_mean.bias: [ 0.00323274 -0.00221145]
+  actor_logstd: [[-0.00097831 -0.00027468]], std=[[0.9990222 0.9997254]]
+  Avg Regret: 4.4311, Avg Reward: -13.27
+  Loss: 3.8709, Entropy: 2.8366
+  Saved to runs/TabPFN_CNN_PPO_Ackley_1765455168/agent_15.pt
+
+Update 16:
+  actor_mean.weight: mean=-0.0005, std=0.0438, min=-0.1134, max=0.1198
+  actor_mean.bias: [ 0.0037084  -0.00225409]
+  actor_logstd: [[-0.00168669 -0.00055812]], std=[[0.99831474 0.99944204]]
+  Avg Regret: 4.5126, Avg Reward: -14.88
+  Loss: 0.4289, Entropy: 2.8357
+
+Update 17:
+  actor_mean.weight: mean=-0.0005, std=0.0438, min=-0.1141, max=0.1200
+  actor_mean.bias: [ 0.00340969 -0.00237816]
+  actor_logstd: [[-0.0007994   0.00063785]], std=[[0.99920094 1.0006381 ]]
+  Avg Regret: 4.7972, Avg Reward: -15.35
+  Loss: 0.1885, Entropy: 2.8377
+
+Update 18:
+  actor_mean.weight: mean=-0.0004, std=0.0438, min=-0.1134, max=0.1202
+  actor_mean.bias: [ 0.00326813 -0.00203351]
+  actor_logstd: [[-0.00123032 -0.00072936]], std=[[0.9987704 0.9992709]]
+  Avg Regret: 4.3833, Avg Reward: -13.81
+  Loss: 0.1926, Entropy: 2.8359
+
+Update 19:
+  actor_mean.weight: mean=-0.0003, std=0.0438, min=-0.1139, max=0.1203
+  actor_mean.bias: [ 0.00318937 -0.00214246]
+  actor_logstd: [[-0.00251442 -0.00032955]], std=[[0.9974888 0.9996705]]
+  Avg Regret: 5.0943, Avg Reward: -15.33
+  Loss: 0.5102, Entropy: 2.8350
+
+Update 20:
+  actor_mean.weight: mean=-0.0003, std=0.0437, min=-0.1118, max=0.1198
+  actor_mean.bias: [ 0.00376805 -0.00232196]
+  actor_logstd: [[-0.00203623  0.00111593]], std=[[0.9979659 1.0011166]]
+  Avg Regret: 5.1358, Avg Reward: -15.86
+  Loss: 0.4860, Entropy: 2.8369
+  Saved to runs/TabPFN_CNN_PPO_Ackley_1765455168/agent_20.pt
+[Visual] 可视化已保存: visualizations/TabPFN_CNN_PPO_Ackley_1765455168/vis_update_0020.png
+
+Update 21:
+  actor_mean.weight: mean=-0.0003, std=0.0437, min=-0.1114, max=0.1198
+  actor_mean.bias: [ 0.00323534 -0.00227553]
+  actor_logstd: [[-0.00146746  0.0015892 ]], std=[[0.9985336 1.0015905]]
+  Avg Regret: 4.3176, Avg Reward: -14.12
+  Loss: 0.2609, Entropy: 2.8380
+
+Update 22:
+  actor_mean.weight: mean=-0.0004, std=0.0437, min=-0.1122, max=0.1196
+  actor_mean.bias: [ 0.00251009 -0.00248015]
+  actor_logstd: [[-0.00154296  0.00110119]], std=[[0.99845827 1.0011017 ]]
+  Avg Regret: 4.3369, Avg Reward: -14.10
+  Loss: 0.2926, Entropy: 2.8374
+
+Update 23:
+  actor_mean.weight: mean=-0.0004, std=0.0437, min=-0.1118, max=0.1194
+  actor_mean.bias: [ 0.0027108  -0.00225273]
+  actor_logstd: [[-6.255496e-03 -8.773397e-05]], std=[[0.993764   0.99991226]]
+  Avg Regret: 3.9002, Avg Reward: -14.25
+  Loss: 0.1766, Entropy: 2.8316
+
+Update 24:
+  actor_mean.weight: mean=-0.0003, std=0.0436, min=-0.1116, max=0.1197
+  actor_mean.bias: [ 0.00287911 -0.00223996]
+  actor_logstd: [[-0.00837302  0.00026829]], std=[[0.99166197 1.0002683 ]]
+  Avg Regret: 4.0289, Avg Reward: -14.17
+  Loss: 0.1439, Entropy: 2.8298
+
+Update 25:
+  actor_mean.weight: mean=-0.0003, std=0.0436, min=-0.1119, max=0.1196
+  actor_mean.bias: [ 0.00314466 -0.00224985]
+  actor_logstd: [[-0.00803788 -0.00134643]], std=[[0.9919944 0.9986545]]
+  Avg Regret: 4.4304, Avg Reward: -14.37
+  Loss: 0.7424, Entropy: 2.8285
+  Saved to runs/TabPFN_CNN_PPO_Ackley_1765455168/agent_25.pt
+
+Update 26:
+  actor_mean.weight: mean=-0.0004, std=0.0436, min=-0.1114, max=0.1193
+  actor_mean.bias: [ 0.00315754 -0.00255185]
+  actor_logstd: [[-0.00977539 -0.00312173]], std=[[0.9902722  0.99688315]]
+  Avg Regret: 4.1032, Avg Reward: -14.33
+  Loss: 2.0665, Entropy: 2.8250
+
+Update 27:
+  actor_mean.weight: mean=-0.0004, std=0.0435, min=-0.1114, max=0.1190
+  actor_mean.bias: [ 0.00299705 -0.00275396]
+  actor_logstd: [[-0.01125658 -0.00351477]], std=[[0.9888065 0.9964914]]
+  Avg Regret: 4.5252, Avg Reward: -15.20
+  Loss: 0.3893, Entropy: 2.8231
+
+Update 28:
+  actor_mean.weight: mean=-0.0004, std=0.0436, min=-0.1115, max=0.1190
+  actor_mean.bias: [ 0.00268184 -0.00273803]
+  actor_logstd: [[-0.01304811 -0.00465379]], std=[[0.98703665 0.99535704]]
+  Avg Regret: 4.2679, Avg Reward: -14.16
+  Loss: 0.4607, Entropy: 2.8202
+
+Update 29:
+  actor_mean.weight: mean=-0.0005, std=0.0433, min=-0.1117, max=0.1191
+  actor_mean.bias: [ 0.00261726 -0.00266204]
+  actor_logstd: [[-0.01312403 -0.00466082]], std=[[0.9869617  0.99535006]]
+  Avg Regret: 4.0218, Avg Reward: 5.97
+  Loss: 8.2831, Entropy: 2.8201
+
+Update 30:
+  actor_mean.weight: mean=-0.0008, std=0.0432, min=-0.1115, max=0.1191
+  actor_mean.bias: [ 0.00231517 -0.00297015]
+  actor_logstd: [[-0.01289348 -0.00351581]], std=[[0.9871893 0.9964904]]
+  Avg Regret: 4.1107, Avg Reward: -14.92
+  Loss: 1.3641, Entropy: 2.8214
+  Saved to runs/TabPFN_CNN_PPO_Ackley_1765455168/agent_30.pt
+[Visual] 可视化已保存: visualizations/TabPFN_CNN_PPO_Ackley_1765455168/vis_update_0030.png
+
+Update 31:
+  actor_mean.weight: mean=-0.0008, std=0.0431, min=-0.1113, max=0.1193
+  actor_mean.bias: [ 0.00229166 -0.00292467]
+  actor_logstd: [[-0.01281317 -0.00333474]], std=[[0.98726857 0.99667084]]
+  Avg Regret: 4.2017, Avg Reward: 3.00
+  Loss: 1705.8464, Entropy: 2.8217
+
+Update 32:
+  actor_mean.weight: mean=-0.0011, std=0.0431, min=-0.1112, max=0.1192
+  actor_mean.bias: [ 0.00226353 -0.00321621]
+  actor_logstd: [[-0.01007696 -0.00156002]], std=[[0.9899736 0.9984412]]
+  Avg Regret: 4.8558, Avg Reward: -15.57
+  Loss: 0.8545, Entropy: 2.8262
+
+Update 33:
+  actor_mean.weight: mean=-0.0011, std=0.0431, min=-0.1115, max=0.1190
+  actor_mean.bias: [ 0.00218593 -0.00340138]
+  actor_logstd: [[-0.00826042 -0.00013354]], std=[[0.99177355 0.99986655]]
+  Avg Regret: 5.6306, Avg Reward: -16.91
+  Loss: 0.7865, Entropy: 2.8295
+
+Update 34:
+  actor_mean.weight: mean=-0.0012, std=0.0431, min=-0.1122, max=0.1191
+  actor_mean.bias: [ 0.00190269 -0.00342966]
+  actor_logstd: [[-0.00880053 -0.00080318]], std=[[0.99123806 0.9991972 ]]
+  Avg Regret: 4.0487, Avg Reward: -14.33
+  Loss: 0.4500, Entropy: 2.8283
+
+Update 35:
+  actor_mean.weight: mean=-0.0011, std=0.0431, min=-0.1131, max=0.1193
+  actor_mean.bias: [ 0.00157211 -0.00283529]
+  actor_logstd: [[-0.0106153  -0.00078017]], std=[[0.98944086 0.99922013]]
+  Avg Regret: 4.1612, Avg Reward: -14.78
+  Loss: 0.5894, Entropy: 2.8265
+  Saved to runs/TabPFN_CNN_PPO_Ackley_1765455168/agent_35.pt
+
+Update 36:
+  actor_mean.weight: mean=-0.0011, std=0.0431, min=-0.1118, max=0.1192
+  actor_mean.bias: [ 0.00175226 -0.00298351]
+  actor_logstd: [[-0.01297447  0.00170058]], std=[[0.9871093 1.0017021]]
+  Avg Regret: 4.3529, Avg Reward: -14.34
+  Loss: 0.4853, Entropy: 2.8266
+
+Update 37:
+  actor_mean.weight: mean=-0.0012, std=0.0430, min=-0.1117, max=0.1188
+  actor_mean.bias: [ 0.00183079 -0.0039467 ]
+  actor_logstd: [[-0.0135675   0.00092978]], std=[[0.9865241 1.0009302]]
+  Avg Regret: 5.4724, Avg Reward: -16.74
+  Loss: 0.6844, Entropy: 2.8252
+
+Update 38:
+  actor_mean.weight: mean=-0.0012, std=0.0430, min=-0.1115, max=0.1187
+  actor_mean.bias: [ 0.00156626 -0.00410338]
+  actor_logstd: [[-0.01219925  0.00074315]], std=[[0.98787487 1.0007434 ]]
+  Avg Regret: 4.6601, Avg Reward: -15.37
+  Loss: 0.0970, Entropy: 2.8264
+
+Update 39:
+  actor_mean.weight: mean=-0.0013, std=0.0430, min=-0.1121, max=0.1183
+  actor_mean.bias: [ 0.00095292 -0.00416681]
+  actor_logstd: [[-0.01512359  0.00127268]], std=[[0.9849902 1.0012735]]
+  Avg Regret: 4.1112, Avg Reward: -15.11
+  Loss: 0.1069, Entropy: 2.8241
+
+Update 40:
+  actor_mean.weight: mean=-0.0012, std=0.0430, min=-0.1119, max=0.1184
+  actor_mean.bias: [ 0.00099672 -0.00423238]
+  actor_logstd: [[-0.01526099  0.00067409]], std=[[0.9848549 1.0006742]]
+  Avg Regret: 4.4846, Avg Reward: -8.47
+  Loss: 18.9337, Entropy: 2.8233
+  Saved to runs/TabPFN_CNN_PPO_Ackley_1765455168/agent_40.pt
+[Visual] 可视化已保存: visualizations/TabPFN_CNN_PPO_Ackley_1765455168/vis_update_0040.png
+
+Update 41:
+  actor_mean.weight: mean=-0.0011, std=0.0430, min=-0.1106, max=0.1183
+  actor_mean.bias: [ 0.00149847 -0.0048473 ]
+  actor_logstd: [[-0.01456743 -0.00144358]], std=[[0.9855382  0.99855745]]
+  Avg Regret: 5.1173, Avg Reward: -16.37
+  Loss: 0.3093, Entropy: 2.8219
+
+Update 42:
+  actor_mean.weight: mean=-0.0010, std=0.0430, min=-0.1092, max=0.1186
+  actor_mean.bias: [ 0.00170432 -0.00463577]
+  actor_logstd: [[-0.01665342 -0.00251688]], std=[[0.9834845 0.9974863]]
+  Avg Regret: 5.0000, Avg Reward: -14.75
+  Loss: 0.6880, Entropy: 2.8188
+
+Update 43:
+  actor_mean.weight: mean=-0.0010, std=0.0429, min=-0.1092, max=0.1186
+  actor_mean.bias: [ 0.00187648 -0.00425728]
+  actor_logstd: [[-0.02004439 -0.0043849 ]], std=[[0.9801551 0.9956247]]
+  Avg Regret: 4.7357, Avg Reward: -15.06
+  Loss: 0.3160, Entropy: 2.8135
+
+Update 44:
+  actor_mean.weight: mean=-0.0010, std=0.0429, min=-0.1094, max=0.1186
+  actor_mean.bias: [ 0.00130216 -0.00379492]
+  actor_logstd: [[-0.02282338 -0.006261  ]], std=[[0.9774351  0.99375856]]
+  Avg Regret: 4.5221, Avg Reward: -14.43
+  Loss: 0.4029, Entropy: 2.8088
+
+Update 45:
+  actor_mean.weight: mean=-0.0009, std=0.0429, min=-0.1094, max=0.1186
+  actor_mean.bias: [ 0.00116946 -0.00380552]
+  actor_logstd: [[-0.0230067  -0.00635479]], std=[[0.97725594 0.99366534]]
+  Avg Regret: 3.6616, Avg Reward: 1.66
+  Loss: 388.6379, Entropy: 2.8085
+  Saved to runs/TabPFN_CNN_PPO_Ackley_1765455168/agent_45.pt
+
+Update 46:
+  actor_mean.weight: mean=-0.0010, std=0.0430, min=-0.1083, max=0.1190
+  actor_mean.bias: [ 0.00023598 -0.00370533]
+  actor_logstd: [[-0.02405477 -0.00480977]], std=[[0.97623223 0.99520177]]
+  Avg Regret: 4.0306, Avg Reward: -14.45
+  Loss: 0.5856, Entropy: 2.8090
+
+Update 47:
+  actor_mean.weight: mean=-0.0008, std=0.0430, min=-0.1085, max=0.1191
+  actor_mean.bias: [ 0.00056633 -0.00340846]
+  actor_logstd: [[-0.02512807 -0.00785791]], std=[[0.97518504 0.9921729 ]]
+  Avg Regret: 4.4279, Avg Reward: -14.41
+  Loss: 0.5936, Entropy: 2.8050
+
+Update 48:
+  actor_mean.weight: mean=-0.0005, std=0.0429, min=-0.1087, max=0.1191
+  actor_mean.bias: [ 0.00114594 -0.00334425]
+  actor_logstd: [[-0.02487016 -0.00828863]], std=[[0.97543657 0.9917456 ]]
+  Avg Regret: 4.8713, Avg Reward: -11.35
+  Loss: 4.0245, Entropy: 2.8047
+
+Update 49:
+  actor_mean.weight: mean=-0.0004, std=0.0429, min=-0.1092, max=0.1193
+  actor_mean.bias: [ 0.00072948 -0.00328848]
+  actor_logstd: [[-0.02531491 -0.01084714]], std=[[0.9750028  0.98921144]]
+  Avg Regret: 3.9270, Avg Reward: -14.04
+  Loss: 0.0619, Entropy: 2.8018
+
+Update 50:
+  actor_mean.weight: mean=-0.0004, std=0.0429, min=-0.1095, max=0.1190
+  actor_mean.bias: [-0.00026519 -0.00346277]
+  actor_logstd: [[-0.02797875 -0.01353263]], std=[[0.972409  0.9865585]]
+  Avg Regret: 4.0231, Avg Reward: -13.89
+  Loss: 0.4963, Entropy: 2.7964
+  Saved to runs/TabPFN_CNN_PPO_Ackley_1765455168/agent_50.pt
+[Visual] 可视化已保存: visualizations/TabPFN_CNN_PPO_Ackley_1765455168/vis_update_0050.png
+
+Update 51:
+  actor_mean.weight: mean=-0.0005, std=0.0429, min=-0.1101, max=0.1188
+  actor_mean.bias: [-0.00058373 -0.00320842]
+  actor_logstd: [[-0.02729426 -0.01647154]], std=[[0.97307485 0.9836634 ]]
+  Avg Regret: 4.7160, Avg Reward: -14.91
+  Loss: 0.2077, Entropy: 2.7942
+
+Update 52:
+  actor_mean.weight: mean=-0.0005, std=0.0429, min=-0.1100, max=0.1182
+  actor_mean.bias: [-9.4147275e-05 -3.6387714e-03]
+  actor_logstd: [[-0.02800081 -0.0182175 ]], std=[[0.97238755 0.9819474 ]]
+  Avg Regret: 4.4555, Avg Reward: -14.93
+  Loss: 0.7628, Entropy: 2.7917
+
+Update 53:
+  actor_mean.weight: mean=-0.0005, std=0.0429, min=-0.1091, max=0.1186
+  actor_mean.bias: [ 0.00048756 -0.00364568]
+  actor_logstd: [[-0.02982931 -0.01815147]], std=[[0.97061116 0.9820123 ]]
+  Avg Regret: 4.1448, Avg Reward: -14.83
+  Loss: 0.3812, Entropy: 2.7899
+
+Update 54:
+  actor_mean.weight: mean=-0.0005, std=0.0429, min=-0.1076, max=0.1185
+  actor_mean.bias: [ 0.00075049 -0.00341456]
+  actor_logstd: [[-0.03208229 -0.01902081]], std=[[0.9684269 0.9811589]]
+  Avg Regret: 4.8039, Avg Reward: -14.85
+  Loss: 0.1793, Entropy: 2.7869
+
+Update 55:
+  actor_mean.weight: mean=-0.0006, std=0.0428, min=-0.1082, max=0.1182
+  actor_mean.bias: [ 0.00046707 -0.00393022]
+  actor_logstd: [[-0.03248416 -0.01925229]], std=[[0.96803784 0.9809319 ]]
+  Avg Regret: 4.4819, Avg Reward: -15.12
+  Loss: 0.1811, Entropy: 2.7861
+  Saved to runs/TabPFN_CNN_PPO_Ackley_1765455168/agent_55.pt
+
+Update 56:
+  actor_mean.weight: mean=-0.0006, std=0.0428, min=-0.1079, max=0.1180
+  actor_mean.bias: [ 0.00113267 -0.00444192]
+  actor_logstd: [[-0.0309819  -0.02199683]], std=[[0.96949315 0.97824335]]
+  Avg Regret: 3.6995, Avg Reward: -13.74
+  Loss: 0.1580, Entropy: 2.7849
+
+Update 57:
+  actor_mean.weight: mean=-0.0006, std=0.0428, min=-0.1084, max=0.1184
+  actor_mean.bias: [ 0.00104381 -0.00456698]
+  actor_logstd: [[-0.03208967 -0.02229059]], std=[[0.96841973 0.97795594]]
+  Avg Regret: 4.3662, Avg Reward: -15.08
+  Loss: 0.0150, Entropy: 2.7836
+
+Update 58:
+  actor_mean.weight: mean=-0.0005, std=0.0427, min=-0.1085, max=0.1186
+  actor_mean.bias: [ 0.00120864 -0.00440932]
+  actor_logstd: [[-0.03252451 -0.02175385]], std=[[0.96799874 0.97848105]]
+  Avg Regret: 4.1757, Avg Reward: -9.89
+  Loss: 2.3923, Entropy: 2.7836
+
+Update 59:
+  actor_mean.weight: mean=-0.0004, std=0.0428, min=-0.1080, max=0.1191
+  actor_mean.bias: [ 0.00156961 -0.00398912]
+  actor_logstd: [[-0.03455934 -0.02057785]], std=[[0.9660311 0.9796324]]
+  Avg Regret: 3.1536, Avg Reward: -11.97
+  Loss: 0.3337, Entropy: 2.7828
+
+Update 60:
+  actor_mean.weight: mean=-0.0004, std=0.0428, min=-0.1080, max=0.1188
+  actor_mean.bias: [ 0.0014943  -0.00493399]
+  actor_logstd: [[-0.03489475 -0.02195662]], std=[[0.96570706 0.97828263]]
+  Avg Regret: 4.2271, Avg Reward: -13.84
+  Loss: 0.3606, Entropy: 2.7810
+  Saved to runs/TabPFN_CNN_PPO_Ackley_1765455168/agent_60.pt
+[Visual] 可视化已保存: visualizations/TabPFN_CNN_PPO_Ackley_1765455168/vis_update_0060.png
+
+Update 61:
+  actor_mean.weight: mean=-0.0003, std=0.0427, min=-0.1087, max=0.1192
+  actor_mean.bias: [ 0.00145097 -0.00508952]
+  actor_logstd: [[-0.03279648 -0.02393455]], std=[[0.96773547 0.9763496 ]]
+  Avg Regret: 4.1192, Avg Reward: -14.65
+  Loss: 0.1870, Entropy: 2.7811
+
+Update 62:
+  actor_mean.weight: mean=-0.0004, std=0.0427, min=-0.1085, max=0.1186
+  actor_mean.bias: [ 0.00111484 -0.00504797]
+  actor_logstd: [[-0.03529966 -0.02680438]], std=[[0.9653161 0.9735517]]
+  Avg Regret: 3.8460, Avg Reward: -14.24
+  Loss: 0.5678, Entropy: 2.7759
+
+Update 63:
+  actor_mean.weight: mean=-0.0005, std=0.0427, min=-0.1085, max=0.1182
+  actor_mean.bias: [ 0.00152144 -0.00497608]
+  actor_logstd: [[-0.03697218 -0.02729009]], std=[[0.963703   0.97307897]]
+  Avg Regret: 5.2269, Avg Reward: -15.36
+  Loss: 0.0537, Entropy: 2.7736
+
+Update 64:
+  actor_mean.weight: mean=-0.0005, std=0.0427, min=-0.1083, max=0.1180
+  actor_mean.bias: [ 0.00161322 -0.00508988]
+  actor_logstd: [[-0.03663395 -0.02855794]], std=[[0.96402895 0.971846  ]]
+  Avg Regret: 4.4249, Avg Reward: -12.69
+  Loss: 0.7907, Entropy: 2.7727
+
+Update 65:
+  actor_mean.weight: mean=-0.0006, std=0.0427, min=-0.1081, max=0.1183
+  actor_mean.bias: [ 0.00129774 -0.00565648]
+  actor_logstd: [[-0.03306612 -0.02978692]], std=[[0.9674746 0.9706523]]
+  Avg Regret: 4.0026, Avg Reward: -14.01
+  Loss: 0.1961, Entropy: 2.7750
+  Saved to runs/TabPFN_CNN_PPO_Ackley_1765455168/agent_65.pt
+
+Update 66:
+  actor_mean.weight: mean=-0.0007, std=0.0426, min=-0.1074, max=0.1176
+  actor_mean.bias: [ 0.00169606 -0.0060465 ]
+  actor_logstd: [[-0.03454377 -0.0280885 ]], std=[[0.9660461 0.9723023]]
+  Avg Regret: 4.0548, Avg Reward: -13.65
+  Loss: 0.3002, Entropy: 2.7752
+
+Update 67:
+  actor_mean.weight: mean=-0.0007, std=0.0426, min=-0.1080, max=0.1172
+  actor_mean.bias: [ 0.0015469  -0.00631675]
+  actor_logstd: [[-0.03371479 -0.03033945]], std=[[0.9668472 0.9701162]]
+  Avg Regret: 3.9785, Avg Reward: -14.65
+  Loss: 0.0196, Entropy: 2.7738
+
+Update 68:
+  actor_mean.weight: mean=-0.0007, std=0.0425, min=-0.1075, max=0.1174
+  actor_mean.bias: [ 0.00152038 -0.00624493]
+  actor_logstd: [[-0.03360304 -0.03127937]], std=[[0.9669553  0.96920484]]
+  Avg Regret: 4.0958, Avg Reward: -14.35
+  Loss: 0.2376, Entropy: 2.7730
+
+Update 69:
+  actor_mean.weight: mean=-0.0007, std=0.0425, min=-0.1065, max=0.1173
+  actor_mean.bias: [ 0.00138652 -0.00708596]
+  actor_logstd: [[-0.03786792 -0.03251479]], std=[[0.9628401 0.9680081]]
+  Avg Regret: 4.0091, Avg Reward: -14.00
+  Loss: 0.0283, Entropy: 2.7676
+
+Update 70:
+  actor_mean.weight: mean=-0.0007, std=0.0425, min=-0.1062, max=0.1173
+  actor_mean.bias: [ 0.00137796 -0.00723788]
+  actor_logstd: [[-0.04289093 -0.0319734 ]], std=[[0.95801586 0.9685323 ]]
+  Avg Regret: 3.3943, Avg Reward: -13.55
+  Loss: 0.0907, Entropy: 2.7631
+  Saved to runs/TabPFN_CNN_PPO_Ackley_1765455168/agent_70.pt
+[Visual] 可视化已保存: visualizations/TabPFN_CNN_PPO_Ackley_1765455168/vis_update_0070.png
+
+Update 71:
+  actor_mean.weight: mean=-0.0007, std=0.0424, min=-0.1058, max=0.1171
+  actor_mean.bias: [ 0.00097799 -0.00737392]
+  actor_logstd: [[-0.04025834 -0.03082082]], std=[[0.96054125 0.9696493 ]]
+  Avg Regret: 4.1695, Avg Reward: -14.36
+  Loss: 0.1564, Entropy: 2.7667
+
+Update 72:
+  actor_mean.weight: mean=-0.0008, std=0.0424, min=-0.1059, max=0.1172
+  actor_mean.bias: [ 0.00083547 -0.00737709]
+  actor_logstd: [[-0.03981859 -0.03053472]], std=[[0.9609638 0.9699267]]
+  Avg Regret: 4.2213, Avg Reward: 10.22
+  Loss: 32.2881, Entropy: 2.7675
+
+Update 73:
+  actor_mean.weight: mean=-0.0008, std=0.0424, min=-0.1059, max=0.1170
+  actor_mean.bias: [ 0.00089293 -0.00765725]
+  actor_logstd: [[-0.03953511 -0.02998454]], std=[[0.96123624 0.97046053]]
+  Avg Regret: 4.1955, Avg Reward: -6.82
+  Loss: 4.2002, Entropy: 2.7683
+
+Update 74:
+  actor_mean.weight: mean=-0.0007, std=0.0424, min=-0.1058, max=0.1172
+  actor_mean.bias: [ 0.00077057 -0.00773546]
+  actor_logstd: [[-0.03673462 -0.03044887]], std=[[0.9639319 0.97001  ]]
+  Avg Regret: 4.6640, Avg Reward: -15.38
+  Loss: 0.6277, Entropy: 2.7707
+
+Update 75:
+  actor_mean.weight: mean=-0.0007, std=0.0425, min=-0.1058, max=0.1175
+  actor_mean.bias: [ 0.00056531 -0.00770108]
+  actor_logstd: [[-0.03564526 -0.02945122]], std=[[0.9649826 0.9709782]]
+  Avg Regret: 3.8313, Avg Reward: -13.34
+  Loss: 0.8124, Entropy: 2.7727
+  Saved to runs/TabPFN_CNN_PPO_Ackley_1765455168/agent_75.pt
+
+Update 76:
+  actor_mean.weight: mean=-0.0007, std=0.0424, min=-0.1064, max=0.1173
+  actor_mean.bias: [ 0.00038736 -0.00809069]
+  actor_logstd: [[-0.03550598 -0.02911936]], std=[[0.965117  0.9713005]]
+  Avg Regret: 4.3517, Avg Reward: -14.62
+  Loss: 0.4538, Entropy: 2.7732
+
+Update 77:
+  actor_mean.weight: mean=-0.0006, std=0.0424, min=-0.1060, max=0.1174
+  actor_mean.bias: [ 0.00038555 -0.00807724]
+  actor_logstd: [[-0.0387247  -0.02922075]], std=[[0.96201557 0.971202  ]]
+  Avg Regret: 4.7724, Avg Reward: -15.22
+  Loss: 0.1544, Entropy: 2.7701
+
+Update 78:
+  actor_mean.weight: mean=-0.0007, std=0.0424, min=-0.1060, max=0.1171
+  actor_mean.bias: [-0.00024261 -0.00812461]
+  actor_logstd: [[-0.04316917 -0.02754212]], std=[[0.95774937 0.97283363]]
+  Avg Regret: 3.5560, Avg Reward: -13.24
+  Loss: 0.1821, Entropy: 2.7672
+
+Update 79:
+  actor_mean.weight: mean=-0.0008, std=0.0425, min=-0.1072, max=0.1172
+  actor_mean.bias: [-0.00054969 -0.0084898 ]
+  actor_logstd: [[-0.04715324 -0.02855186]], std=[[0.9539412 0.9718518]]
+  Avg Regret: 4.1905, Avg Reward: -14.27
+  Loss: -0.0876, Entropy: 2.7622
+slurmstepd: error: *** JOB 993559 ON r4519u01n01 CANCELLED AT 2025-12-11T08:34:15 ***
+++ cleanup
++++ date +%s
+++ end_time=1765460055
+++ runtime=4890
++++ date
++++ hostname
+++ echo '任务在 Thu Dec 11 08:34:15 EST 2025 结束或中断 (hostname=r4519u01n01.misha.ycrc.yale.edu)'
+任务在 Thu Dec 11 08:34:15 EST 2025 结束或中断 (hostname=r4519u01n01.misha.ycrc.yale.edu)
+++ echo '总耗时: 1 小时 21 分钟 30 秒'
+总耗时: 1 小时 21 分钟 30 秒

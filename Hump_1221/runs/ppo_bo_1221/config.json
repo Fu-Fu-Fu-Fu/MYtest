@@ -1,0 +1,13 @@
+{
+  "variants_path": "./data/six_hump_camel_family_variants.npz",
+  "model_path": "./model/finetuned_tabpfn_six_hump_camel_family.ckpt",
+  "total_episodes": 5000,
+  "max_steps": 20,
+  "n_candidates": 128,
+  "hidden_dim": 64,
+  "n_self_attn_layers": 3,
+  "n_cross_attn_layers": 2,
+  "n_heads": 8,
+  "seed": 42,
+  "version": "six_hump_camel"
+}

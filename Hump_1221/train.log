@@ -1,0 +1,306 @@
+任务开始运行于 r4518u09n01.misha.ycrc.yale.edu at Sun Dec 21 06:40:17 EST 2025
+CUDA_VISIBLE_DEVICES: 0
+正在使用的显卡信息：
+NVIDIA A40
++ python -u src/train_rl.py --total_episodes 5000 --max_steps 20 --n_candidates 128 --hidden_dim 64 --n_cross_attn_layers 2 --update_every 20 --save_every 1000 --save_dir ./runs/ppo_bo_1221 --seed 42
+/gpfs/radev/pi/cohan/yz979/environment/miniconda3/envs/fl_test/lib/python3.11/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+
+======================================================================
+Improved PPO Training for Bayesian Optimization (Six-Hump Camel)
+======================================================================
+Device: cuda
+Total Episodes: 5000
+Max Steps per Episode: 20
+Candidates per Step: 128
+Update Every: 20 episodes
+网络: hidden=64, self_attn=3, cross_attn=2, heads=8
+======================================================================
+
+TensorBoard 日志目录: ./runs/ppo_bo_1221/tensorboard
+环境已创建: 32 个 Six-Hump Camel 变体
+PPO 网络参数量: 285,124
+
+开始训练...
+
+Episode    20 | Reward:   7.01 | Regret: 0.7641 | Best: inf | LR: 1.00e-04
+Episode    40 | Reward:   6.03 | Regret: 0.6965 | Best: inf | LR: 9.99e-05
+Episode    60 | Reward:   5.93 | Regret: 0.7052 | Best: inf | LR: 9.98e-05
+Episode    80 | Reward:   5.87 | Regret: 0.6640 | Best: inf | LR: 9.96e-05
+Episode   100 | Reward:   5.89 | Regret: 0.6972 | Best: 0.6972 | LR: 9.94e-05
+Episode   120 | Reward:   5.75 | Regret: 0.6564 | Best: 0.6512 | LR: 9.91e-05
+Episode   140 | Reward:   6.61 | Regret: 0.6322 | Best: 0.6304 | LR: 9.88e-05
+Episode   160 | Reward:   6.80 | Regret: 0.5819 | Best: 0.5784 | LR: 9.84e-05
+Episode   180 | Reward:   7.24 | Regret: 0.5809 | Best: 0.5784 | LR: 9.80e-05
+Episode   200 | Reward:   7.01 | Regret: 0.5268 | Best: 0.5222 | LR: 9.76e-05
+Episode   220 | Reward:   7.62 | Regret: 0.5303 | Best: 0.5118 | LR: 9.70e-05
+Episode   240 | Reward:   7.05 | Regret: 0.5561 | Best: 0.5118 | LR: 9.65e-05
+Episode   260 | Reward:   7.19 | Regret: 0.5597 | Best: 0.5118 | LR: 9.59e-05
+Episode   280 | Reward:   6.83 | Regret: 0.5799 | Best: 0.5118 | LR: 9.52e-05
+Episode   300 | Reward:   7.05 | Regret: 0.5817 | Best: 0.5118 | LR: 9.46e-05
+Episode   320 | Reward:   6.23 | Regret: 0.5912 | Best: 0.5118 | LR: 9.38e-05
+Episode   340 | Reward:   6.17 | Regret: 0.5677 | Best: 0.5118 | LR: 9.30e-05
+Episode   360 | Reward:   6.04 | Regret: 0.5792 | Best: 0.5118 | LR: 9.22e-05
+Episode   380 | Reward:   6.28 | Regret: 0.5617 | Best: 0.5118 | LR: 9.14e-05
+Episode   400 | Reward:   7.18 | Regret: 0.5273 | Best: 0.5118 | LR: 9.05e-05
+Episode   420 | Reward:   7.67 | Regret: 0.4944 | Best: 0.4913 | LR: 8.95e-05
+Episode   440 | Reward:   7.87 | Regret: 0.5030 | Best: 0.4812 | LR: 8.85e-05
+Episode   460 | Reward:   8.06 | Regret: 0.4794 | Best: 0.4682 | LR: 8.75e-05
+Episode   480 | Reward:   8.19 | Regret: 0.4747 | Best: 0.4513 | LR: 8.64e-05
+Episode   500 | Reward:   7.79 | Regret: 0.4918 | Best: 0.4513 | LR: 8.54e-05
+Episode   520 | Reward:   7.56 | Regret: 0.4991 | Best: 0.4513 | LR: 8.42e-05
+Episode   540 | Reward:   7.45 | Regret: 0.4763 | Best: 0.4513 | LR: 8.31e-05
+Episode   560 | Reward:   7.46 | Regret: 0.4912 | Best: 0.4513 | LR: 8.19e-05
+Episode   580 | Reward:   7.11 | Regret: 0.4991 | Best: 0.4513 | LR: 8.06e-05
+Episode   600 | Reward:   7.28 | Regret: 0.5066 | Best: 0.4513 | LR: 7.94e-05
+Episode   620 | Reward:   7.29 | Regret: 0.5422 | Best: 0.4513 | LR: 7.81e-05
+Episode   640 | Reward:   7.29 | Regret: 0.5705 | Best: 0.4513 | LR: 7.68e-05
+Episode   660 | Reward:   6.93 | Regret: 0.5804 | Best: 0.4513 | LR: 7.55e-05
+Episode   680 | Reward:   7.26 | Regret: 0.5962 | Best: 0.4513 | LR: 7.41e-05
+Episode   700 | Reward:   7.08 | Regret: 0.5835 | Best: 0.4513 | LR: 7.27e-05
+Episode   720 | Reward:   7.22 | Regret: 0.5518 | Best: 0.4513 | LR: 7.13e-05
+Episode   740 | Reward:   7.76 | Regret: 0.5118 | Best: 0.4513 | LR: 6.99e-05
+Episode   760 | Reward:   8.02 | Regret: 0.5206 | Best: 0.4513 | LR: 6.84e-05
+Episode   780 | Reward:   7.68 | Regret: 0.5300 | Best: 0.4513 | LR: 6.69e-05
+Episode   800 | Reward:   7.78 | Regret: 0.5463 | Best: 0.4513 | LR: 6.55e-05
+Episode   820 | Reward:   7.47 | Regret: 0.5617 | Best: 0.4513 | LR: 6.39e-05
+Episode   840 | Reward:   6.82 | Regret: 0.6119 | Best: 0.4513 | LR: 6.24e-05
+Episode   860 | Reward:   7.42 | Regret: 0.5667 | Best: 0.4513 | LR: 6.09e-05
+Episode   880 | Reward:   7.70 | Regret: 0.4901 | Best: 0.4513 | LR: 5.94e-05
+Episode   900 | Reward:   7.59 | Regret: 0.5018 | Best: 0.4513 | LR: 5.78e-05
+Episode   920 | Reward:   7.58 | Regret: 0.4964 | Best: 0.4513 | LR: 5.63e-05
+Episode   940 | Reward:   8.12 | Regret: 0.4526 | Best: 0.4493 | LR: 5.47e-05
+Episode   960 | Reward:   7.27 | Regret: 0.5138 | Best: 0.4389 | LR: 5.31e-05
+Episode   980 | Reward:   7.22 | Regret: 0.5693 | Best: 0.4389 | LR: 5.16e-05
+Episode  1000 | Reward:   6.86 | Regret: 0.5610 | Best: 0.4389 | LR: 5.00e-05
+
+模型已保存: ./runs/ppo_bo_1221/ppo_ep1000.pt
+
+Episode  1020 | Reward:   7.14 | Regret: 0.5424 | Best: 0.4389 | LR: 4.84e-05
+Episode  1040 | Reward:   6.79 | Regret: 0.5697 | Best: 0.4389 | LR: 4.69e-05
+Episode  1060 | Reward:   7.07 | Regret: 0.5335 | Best: 0.4389 | LR: 4.53e-05
+Episode  1080 | Reward:   6.66 | Regret: 0.5689 | Best: 0.4389 | LR: 4.37e-05
+Episode  1100 | Reward:   7.10 | Regret: 0.5499 | Best: 0.4389 | LR: 4.22e-05
+Episode  1120 | Reward:   7.24 | Regret: 0.5769 | Best: 0.4389 | LR: 4.06e-05
+Episode  1140 | Reward:   7.11 | Regret: 0.5946 | Best: 0.4389 | LR: 3.91e-05
+Episode  1160 | Reward:   7.13 | Regret: 0.6113 | Best: 0.4389 | LR: 3.76e-05
+Episode  1180 | Reward:   7.79 | Regret: 0.5636 | Best: 0.4389 | LR: 3.61e-05
+Episode  1200 | Reward:   7.20 | Regret: 0.6041 | Best: 0.4389 | LR: 3.45e-05
+Episode  1220 | Reward:   7.31 | Regret: 0.5886 | Best: 0.4389 | LR: 3.31e-05
+Episode  1240 | Reward:   7.41 | Regret: 0.5796 | Best: 0.4389 | LR: 3.16e-05
+Episode  1260 | Reward:   7.37 | Regret: 0.5770 | Best: 0.4389 | LR: 3.01e-05
+Episode  1280 | Reward:   7.05 | Regret: 0.6047 | Best: 0.4389 | LR: 2.87e-05
+Episode  1300 | Reward:   7.63 | Regret: 0.5601 | Best: 0.4389 | LR: 2.73e-05
+Episode  1320 | Reward:   7.18 | Regret: 0.5396 | Best: 0.4389 | LR: 2.59e-05
+Episode  1340 | Reward:   7.19 | Regret: 0.5200 | Best: 0.4389 | LR: 2.45e-05
+Episode  1360 | Reward:   7.56 | Regret: 0.5246 | Best: 0.4389 | LR: 2.32e-05
+Episode  1380 | Reward:   7.82 | Regret: 0.4853 | Best: 0.4389 | LR: 2.19e-05
+Episode  1400 | Reward:   7.93 | Regret: 0.4818 | Best: 0.4389 | LR: 2.06e-05
+Episode  1420 | Reward:   8.32 | Regret: 0.4926 | Best: 0.4389 | LR: 1.94e-05
+Episode  1440 | Reward:   9.03 | Regret: 0.4891 | Best: 0.4389 | LR: 1.81e-05
+Episode  1460 | Reward:   8.47 | Regret: 0.4843 | Best: 0.4389 | LR: 1.69e-05
+Episode  1480 | Reward:   8.32 | Regret: 0.4887 | Best: 0.4389 | LR: 1.58e-05
+Episode  1500 | Reward:   8.02 | Regret: 0.5067 | Best: 0.4389 | LR: 1.46e-05
+Episode  1520 | Reward:   7.36 | Regret: 0.5204 | Best: 0.4389 | LR: 1.36e-05
+Episode  1540 | Reward:   6.71 | Regret: 0.5385 | Best: 0.4389 | LR: 1.25e-05
+Episode  1560 | Reward:   7.02 | Regret: 0.5393 | Best: 0.4389 | LR: 1.15e-05
+Episode  1580 | Reward:   7.07 | Regret: 0.5147 | Best: 0.4389 | LR: 1.05e-05
+Episode  1600 | Reward:   6.83 | Regret: 0.5406 | Best: 0.4389 | LR: 9.55e-06
+Episode  1620 | Reward:   7.63 | Regret: 0.5416 | Best: 0.4389 | LR: 8.65e-06
+Episode  1640 | Reward:   7.68 | Regret: 0.5474 | Best: 0.4389 | LR: 7.78e-06
+Episode  1660 | Reward:   7.74 | Regret: 0.5438 | Best: 0.4389 | LR: 6.96e-06
+Episode  1680 | Reward:   7.92 | Regret: 0.5531 | Best: 0.4389 | LR: 6.18e-06
+Episode  1700 | Reward:   8.02 | Regret: 0.5348 | Best: 0.4389 | LR: 5.45e-06
+Episode  1720 | Reward:   7.74 | Regret: 0.5018 | Best: 0.4389 | LR: 4.76e-06
+Episode  1740 | Reward:   7.57 | Regret: 0.4746 | Best: 0.4389 | LR: 4.11e-06
+Episode  1760 | Reward:   7.95 | Regret: 0.4504 | Best: 0.4321 | LR: 3.51e-06
+Episode  1780 | Reward:   7.59 | Regret: 0.4759 | Best: 0.4321 | LR: 2.96e-06
+Episode  1800 | Reward:   7.41 | Regret: 0.4710 | Best: 0.4321 | LR: 2.45e-06
+Episode  1820 | Reward:   7.05 | Regret: 0.5038 | Best: 0.4321 | LR: 1.99e-06
+Episode  1840 | Reward:   7.09 | Regret: 0.5233 | Best: 0.4321 | LR: 1.57e-06
+Episode  1860 | Reward:   6.77 | Regret: 0.5640 | Best: 0.4321 | LR: 1.20e-06
+Episode  1880 | Reward:   6.72 | Regret: 0.5887 | Best: 0.4321 | LR: 8.86e-07
+Episode  1900 | Reward:   7.02 | Regret: 0.5678 | Best: 0.4321 | LR: 6.16e-07
+analytics-python queue is full
+analytics-python queue is full
+analytics-python queue is full
+Episode  1920 | Reward:   7.07 | Regret: 0.5854 | Best: 0.4321 | LR: 3.94e-07
+Episode  1940 | Reward:   7.25 | Regret: 0.5823 | Best: 0.4321 | LR: 2.22e-07
+Episode  1960 | Reward:   7.37 | Regret: 0.5303 | Best: 0.4321 | LR: 9.87e-08
+Episode  1980 | Reward:   7.25 | Regret: 0.5027 | Best: 0.4321 | LR: 2.47e-08
+Episode  2000 | Reward:   7.03 | Regret: 0.5090 | Best: 0.4321 | LR: 1.00e-04
+
+模型已保存: ./runs/ppo_bo_1221/ppo_ep2000.pt
+
+Episode  2020 | Reward:   7.17 | Regret: 0.4919 | Best: 0.4321 | LR: 1.00e-04
+Episode  2040 | Reward:   7.37 | Regret: 0.4751 | Best: 0.4321 | LR: 1.00e-04
+Episode  2060 | Reward:   6.92 | Regret: 0.4928 | Best: 0.4321 | LR: 9.99e-05
+Episode  2080 | Reward:   7.50 | Regret: 0.4630 | Best: 0.4321 | LR: 9.99e-05
+Episode  2100 | Reward:   7.82 | Regret: 0.4641 | Best: 0.4321 | LR: 9.98e-05
+Episode  2120 | Reward:   7.94 | Regret: 0.4603 | Best: 0.4321 | LR: 9.98e-05
+Episode  2140 | Reward:   7.60 | Regret: 0.4991 | Best: 0.4321 | LR: 9.97e-05
+Episode  2160 | Reward:   8.15 | Regret: 0.5079 | Best: 0.4321 | LR: 9.96e-05
+Episode  2180 | Reward:   7.81 | Regret: 0.5662 | Best: 0.4321 | LR: 9.95e-05
+Episode  2200 | Reward:   7.68 | Regret: 0.5724 | Best: 0.4321 | LR: 9.94e-05
+Episode  2220 | Reward:   7.44 | Regret: 0.5594 | Best: 0.4321 | LR: 9.93e-05
+Episode  2240 | Reward:   7.78 | Regret: 0.5497 | Best: 0.4321 | LR: 9.91e-05
+Episode  2260 | Reward:   7.42 | Regret: 0.5674 | Best: 0.4321 | LR: 9.90e-05
+Episode  2280 | Reward:   8.13 | Regret: 0.4958 | Best: 0.4321 | LR: 9.88e-05
+Episode  2300 | Reward:   8.23 | Regret: 0.5076 | Best: 0.4321 | LR: 9.86e-05
+Episode  2320 | Reward:   8.23 | Regret: 0.5020 | Best: 0.4321 | LR: 9.84e-05
+Episode  2340 | Reward:   7.75 | Regret: 0.4834 | Best: 0.4321 | LR: 9.82e-05
+Episode  2360 | Reward:   7.89 | Regret: 0.4677 | Best: 0.4321 | LR: 9.80e-05
+Episode  2380 | Reward:   7.22 | Regret: 0.5225 | Best: 0.4321 | LR: 9.78e-05
+Episode  2400 | Reward:   6.92 | Regret: 0.5069 | Best: 0.4321 | LR: 9.76e-05
+Episode  2420 | Reward:   7.62 | Regret: 0.4986 | Best: 0.4321 | LR: 9.73e-05
+Episode  2440 | Reward:   8.49 | Regret: 0.4840 | Best: 0.4321 | LR: 9.70e-05
+Episode  2460 | Reward:   8.89 | Regret: 0.4630 | Best: 0.4321 | LR: 9.68e-05
+Episode  2480 | Reward:   9.48 | Regret: 0.4087 | Best: 0.4087 | LR: 9.65e-05
+Episode  2500 | Reward:   9.76 | Regret: 0.4334 | Best: 0.4035 | LR: 9.62e-05
+Episode  2520 | Reward:   9.34 | Regret: 0.4613 | Best: 0.4035 | LR: 9.59e-05
+Episode  2540 | Reward:   9.32 | Regret: 0.4393 | Best: 0.4035 | LR: 9.56e-05
+Episode  2560 | Reward:   9.42 | Regret: 0.4108 | Best: 0.3973 | LR: 9.52e-05
+Episode  2580 | Reward:   9.11 | Regret: 0.4297 | Best: 0.3973 | LR: 9.49e-05
+Episode  2600 | Reward:   9.38 | Regret: 0.4089 | Best: 0.3973 | LR: 9.46e-05
+Episode  2620 | Reward:   9.65 | Regret: 0.3956 | Best: 0.3946 | LR: 9.42e-05
+Episode  2640 | Reward:   9.15 | Regret: 0.4223 | Best: 0.3930 | LR: 9.38e-05
+Episode  2660 | Reward:   8.83 | Regret: 0.4575 | Best: 0.3930 | LR: 9.34e-05
+Episode  2680 | Reward:   8.98 | Regret: 0.4493 | Best: 0.3930 | LR: 9.30e-05
+Episode  2700 | Reward:   8.25 | Regret: 0.4787 | Best: 0.3930 | LR: 9.26e-05
+Episode  2720 | Reward:   8.26 | Regret: 0.4717 | Best: 0.3930 | LR: 9.22e-05
+Episode  2740 | Reward:   8.00 | Regret: 0.4714 | Best: 0.3930 | LR: 9.18e-05
+Episode  2760 | Reward:   7.91 | Regret: 0.5051 | Best: 0.3930 | LR: 9.14e-05
+Episode  2780 | Reward:   7.29 | Regret: 0.5520 | Best: 0.3930 | LR: 9.09e-05
+Episode  2800 | Reward:   8.09 | Regret: 0.5093 | Best: 0.3930 | LR: 9.05e-05
+Episode  2820 | Reward:   8.00 | Regret: 0.4914 | Best: 0.3930 | LR: 9.00e-05
+Episode  2840 | Reward:   8.12 | Regret: 0.4864 | Best: 0.3930 | LR: 8.95e-05
+Episode  2860 | Reward:   8.24 | Regret: 0.4594 | Best: 0.3930 | LR: 8.90e-05
+Episode  2880 | Reward:   8.47 | Regret: 0.4171 | Best: 0.3930 | LR: 8.85e-05
+Episode  2900 | Reward:   8.08 | Regret: 0.4188 | Best: 0.3930 | LR: 8.80e-05
+Episode  2920 | Reward:   7.80 | Regret: 0.4497 | Best: 0.3930 | LR: 8.75e-05
+Episode  2940 | Reward:   8.04 | Regret: 0.4560 | Best: 0.3930 | LR: 8.70e-05
+Episode  2960 | Reward:   7.70 | Regret: 0.4384 | Best: 0.3930 | LR: 8.64e-05
+Episode  2980 | Reward:   7.66 | Regret: 0.4917 | Best: 0.3930 | LR: 8.59e-05
+Episode  3000 | Reward:   8.23 | Regret: 0.4692 | Best: 0.3930 | LR: 8.54e-05
+
+模型已保存: ./runs/ppo_bo_1221/ppo_ep3000.pt
+
+Episode  3020 | Reward:   8.38 | Regret: 0.4807 | Best: 0.3930 | LR: 8.48e-05
+Episode  3040 | Reward:   9.00 | Regret: 0.4499 | Best: 0.3930 | LR: 8.42e-05
+Episode  3060 | Reward:   9.15 | Regret: 0.4904 | Best: 0.3930 | LR: 8.37e-05
+Episode  3080 | Reward:   9.15 | Regret: 0.4598 | Best: 0.3930 | LR: 8.31e-05
+Episode  3100 | Reward:   8.55 | Regret: 0.4549 | Best: 0.3930 | LR: 8.25e-05
+Episode  3120 | Reward:   8.92 | Regret: 0.4003 | Best: 0.3930 | LR: 8.19e-05
+Episode  3140 | Reward:   8.07 | Regret: 0.4351 | Best: 0.3903 | LR: 8.13e-05
+Episode  3160 | Reward:   7.96 | Regret: 0.4091 | Best: 0.3903 | LR: 8.06e-05
+Episode  3180 | Reward:   8.15 | Regret: 0.4027 | Best: 0.3903 | LR: 8.00e-05
+Episode  3200 | Reward:   8.07 | Regret: 0.4551 | Best: 0.3903 | LR: 7.94e-05
+Episode  3220 | Reward:   7.64 | Regret: 0.5055 | Best: 0.3903 | LR: 7.88e-05
+Episode  3240 | Reward:   7.71 | Regret: 0.4932 | Best: 0.3903 | LR: 7.81e-05
+Episode  3260 | Reward:   7.68 | Regret: 0.5052 | Best: 0.3903 | LR: 7.75e-05
+Episode  3280 | Reward:   7.70 | Regret: 0.5082 | Best: 0.3903 | LR: 7.68e-05
+Episode  3300 | Reward:   8.42 | Regret: 0.4685 | Best: 0.3903 | LR: 7.61e-05
+Episode  3320 | Reward:   8.46 | Regret: 0.4609 | Best: 0.3903 | LR: 7.55e-05
+Episode  3340 | Reward:   8.40 | Regret: 0.4467 | Best: 0.3903 | LR: 7.48e-05
+Episode  3360 | Reward:   8.03 | Regret: 0.4270 | Best: 0.3903 | LR: 7.41e-05
+Episode  3380 | Reward:   8.15 | Regret: 0.4144 | Best: 0.3903 | LR: 7.34e-05
+Episode  3400 | Reward:   8.05 | Regret: 0.4085 | Best: 0.3903 | LR: 7.27e-05
+Episode  3420 | Reward:   8.19 | Regret: 0.4256 | Best: 0.3903 | LR: 7.20e-05
+Episode  3440 | Reward:   8.40 | Regret: 0.4584 | Best: 0.3903 | LR: 7.13e-05
+Episode  3460 | Reward:   8.33 | Regret: 0.4815 | Best: 0.3903 | LR: 7.06e-05
+Episode  3480 | Reward:   8.42 | Regret: 0.4753 | Best: 0.3903 | LR: 6.99e-05
+Episode  3500 | Reward:   8.08 | Regret: 0.4957 | Best: 0.3903 | LR: 6.91e-05
+Episode  3520 | Reward:   8.32 | Regret: 0.4407 | Best: 0.3903 | LR: 6.84e-05
+Episode  3540 | Reward:   8.38 | Regret: 0.4283 | Best: 0.3903 | LR: 6.77e-05
+Episode  3560 | Reward:   8.88 | Regret: 0.3939 | Best: 0.3903 | LR: 6.69e-05
+Episode  3580 | Reward:   9.09 | Regret: 0.3963 | Best: 0.3752 | LR: 6.62e-05
+Episode  3600 | Reward:   8.50 | Regret: 0.4130 | Best: 0.3752 | LR: 6.55e-05
+Episode  3620 | Reward:   8.08 | Regret: 0.4480 | Best: 0.3752 | LR: 6.47e-05
+Episode  3640 | Reward:   8.09 | Regret: 0.4248 | Best: 0.3752 | LR: 6.39e-05
+Episode  3660 | Reward:   7.88 | Regret: 0.4286 | Best: 0.3752 | LR: 6.32e-05
+Episode  3680 | Reward:   7.49 | Regret: 0.4293 | Best: 0.3752 | LR: 6.24e-05
+Episode  3700 | Reward:   7.79 | Regret: 0.4256 | Best: 0.3752 | LR: 6.17e-05
+Episode  3720 | Reward:   8.23 | Regret: 0.4189 | Best: 0.3752 | LR: 6.09e-05
+Episode  3740 | Reward:   8.10 | Regret: 0.4287 | Best: 0.3752 | LR: 6.01e-05
+Episode  3760 | Reward:   8.07 | Regret: 0.4561 | Best: 0.3752 | LR: 5.94e-05
+Episode  3780 | Reward:   8.10 | Regret: 0.4717 | Best: 0.3752 | LR: 5.86e-05
+Episode  3800 | Reward:   8.39 | Regret: 0.4679 | Best: 0.3752 | LR: 5.78e-05
+Episode  3820 | Reward:   8.23 | Regret: 0.4493 | Best: 0.3752 | LR: 5.70e-05
+Episode  3840 | Reward:   8.02 | Regret: 0.4655 | Best: 0.3752 | LR: 5.63e-05
+Episode  3860 | Reward:   8.60 | Regret: 0.4515 | Best: 0.3752 | LR: 5.55e-05
+Episode  3880 | Reward:   8.71 | Regret: 0.4277 | Best: 0.3752 | LR: 5.47e-05
+Episode  3900 | Reward:   8.63 | Regret: 0.4066 | Best: 0.3752 | LR: 5.39e-05
+Episode  3920 | Reward:   8.77 | Regret: 0.4578 | Best: 0.3752 | LR: 5.31e-05
+Episode  3940 | Reward:   8.93 | Regret: 0.4591 | Best: 0.3752 | LR: 5.24e-05
+Episode  3960 | Reward:   8.70 | Regret: 0.4478 | Best: 0.3752 | LR: 5.16e-05
+Episode  3980 | Reward:   8.20 | Regret: 0.4530 | Best: 0.3752 | LR: 5.08e-05
+Episode  4000 | Reward:   8.66 | Regret: 0.4554 | Best: 0.3752 | LR: 5.00e-05
+
+模型已保存: ./runs/ppo_bo_1221/ppo_ep4000.pt
+
+Episode  4020 | Reward:   8.80 | Regret: 0.3988 | Best: 0.3752 | LR: 4.92e-05
+Episode  4040 | Reward:   8.56 | Regret: 0.4048 | Best: 0.3752 | LR: 4.84e-05
+Episode  4060 | Reward:   8.39 | Regret: 0.4110 | Best: 0.3752 | LR: 4.76e-05
+Episode  4080 | Reward:   8.56 | Regret: 0.4128 | Best: 0.3752 | LR: 4.69e-05
+Episode  4100 | Reward:   8.64 | Regret: 0.4124 | Best: 0.3752 | LR: 4.61e-05
+Episode  4120 | Reward:   8.49 | Regret: 0.4237 | Best: 0.3752 | LR: 4.53e-05
+Episode  4140 | Reward:   8.33 | Regret: 0.4184 | Best: 0.3752 | LR: 4.45e-05
+Episode  4160 | Reward:   8.20 | Regret: 0.4268 | Best: 0.3752 | LR: 4.37e-05
+Episode  4180 | Reward:   8.04 | Regret: 0.4352 | Best: 0.3752 | LR: 4.30e-05
+Episode  4200 | Reward:   7.56 | Regret: 0.4272 | Best: 0.3752 | LR: 4.22e-05
+Episode  4220 | Reward:   7.55 | Regret: 0.4150 | Best: 0.3752 | LR: 4.14e-05
+Episode  4240 | Reward:   8.13 | Regret: 0.4103 | Best: 0.3752 | LR: 4.06e-05
+Episode  4260 | Reward:   8.29 | Regret: 0.3988 | Best: 0.3752 | LR: 3.99e-05
+Episode  4280 | Reward:   8.31 | Regret: 0.4128 | Best: 0.3752 | LR: 3.91e-05
+Episode  4300 | Reward:   8.45 | Regret: 0.4167 | Best: 0.3752 | LR: 3.83e-05
+Episode  4320 | Reward:   8.21 | Regret: 0.4356 | Best: 0.3752 | LR: 3.76e-05
+Episode  4340 | Reward:   8.20 | Regret: 0.4100 | Best: 0.3752 | LR: 3.68e-05
+Episode  4360 | Reward:   7.99 | Regret: 0.4173 | Best: 0.3752 | LR: 3.61e-05
+Episode  4380 | Reward:   7.75 | Regret: 0.4178 | Best: 0.3752 | LR: 3.53e-05
+Episode  4400 | Reward:   7.69 | Regret: 0.4553 | Best: 0.3752 | LR: 3.45e-05
+Episode  4420 | Reward:   7.93 | Regret: 0.4554 | Best: 0.3752 | LR: 3.38e-05
+Episode  4440 | Reward:   7.90 | Regret: 0.4484 | Best: 0.3752 | LR: 3.31e-05
+Episode  4460 | Reward:   8.24 | Regret: 0.4316 | Best: 0.3752 | LR: 3.23e-05
+Episode  4480 | Reward:   9.12 | Regret: 0.3884 | Best: 0.3752 | LR: 3.16e-05
+Episode  4500 | Reward:   9.36 | Regret: 0.3533 | Best: 0.3533 | LR: 3.09e-05
+Episode  4520 | Reward:   9.59 | Regret: 0.3512 | Best: 0.3512 | LR: 3.01e-05
+Episode  4540 | Reward:   9.09 | Regret: 0.3905 | Best: 0.3508 | LR: 2.94e-05
+Episode  4560 | Reward:   8.92 | Regret: 0.3956 | Best: 0.3508 | LR: 2.87e-05
+Episode  4580 | Reward:   8.39 | Regret: 0.4324 | Best: 0.3508 | LR: 2.80e-05
+Episode  4600 | Reward:   8.09 | Regret: 0.4442 | Best: 0.3508 | LR: 2.73e-05
+Episode  4620 | Reward:   8.01 | Regret: 0.4629 | Best: 0.3508 | LR: 2.66e-05
+Episode  4640 | Reward:   8.66 | Regret: 0.4189 | Best: 0.3508 | LR: 2.59e-05
+Episode  4660 | Reward:   8.72 | Regret: 0.4299 | Best: 0.3508 | LR: 2.52e-05
+Episode  4680 | Reward:   8.80 | Regret: 0.3939 | Best: 0.3508 | LR: 2.45e-05
+Episode  4700 | Reward:   9.44 | Regret: 0.4012 | Best: 0.3508 | LR: 2.39e-05
+Episode  4720 | Reward:   8.98 | Regret: 0.3720 | Best: 0.3508 | LR: 2.32e-05
+Episode  4740 | Reward:   8.54 | Regret: 0.3932 | Best: 0.3508 | LR: 2.25e-05
+Episode  4760 | Reward:   8.87 | Regret: 0.3970 | Best: 0.3508 | LR: 2.19e-05
+Episode  4780 | Reward:   8.89 | Regret: 0.4108 | Best: 0.3508 | LR: 2.12e-05
+Episode  4800 | Reward:   8.25 | Regret: 0.3947 | Best: 0.3508 | LR: 2.06e-05
+Episode  4820 | Reward:   8.70 | Regret: 0.4061 | Best: 0.3508 | LR: 2.00e-05
+Episode  4840 | Reward:   8.93 | Regret: 0.4254 | Best: 0.3508 | LR: 1.94e-05
+Episode  4860 | Reward:   9.20 | Regret: 0.4024 | Best: 0.3508 | LR: 1.87e-05
+Episode  4880 | Reward:   9.36 | Regret: 0.4043 | Best: 0.3508 | LR: 1.81e-05
+Episode  4900 | Reward:   9.43 | Regret: 0.3937 | Best: 0.3508 | LR: 1.75e-05
+Episode  4920 | Reward:   9.06 | Regret: 0.4023 | Best: 0.3508 | LR: 1.69e-05
+Episode  4940 | Reward:   9.16 | Regret: 0.3592 | Best: 0.3508 | LR: 1.63e-05
+Episode  4960 | Reward:   9.27 | Regret: 0.3518 | Best: 0.3437 | LR: 1.58e-05
+Episode  4980 | Reward:   9.15 | Regret: 0.3691 | Best: 0.3437 | LR: 1.52e-05
+Episode  5000 | Reward:   9.10 | Regret: 0.4011 | Best: 0.3437 | LR: 1.46e-05
+
+模型已保存: ./runs/ppo_bo_1221/ppo_ep5000.pt
+
+
+最终模型已保存: ./runs/ppo_bo_1221/ppo_final.pt
+TensorBoard writer 已关闭
++ cleanup
+++ date +%s
++ end_time=1766336160
++ runtime=18943
+++ date
+++ hostname
++ echo '任务在 Sun Dec 21 11:56:00 EST 2025 结束或中断 (hostname=r4518u09n01.misha.ycrc.yale.edu)'
+任务在 Sun Dec 21 11:56:00 EST 2025 结束或中断 (hostname=r4518u09n01.misha.ycrc.yale.edu)
++ echo '总耗时: 5 小时 15 分钟 43 秒'
+总耗时: 5 小时 15 分钟 43 秒
